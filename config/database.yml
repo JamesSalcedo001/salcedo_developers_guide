@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: salcedo_developers_guide_production
-  username: salcedo_developers_guide
-  password: <%= ENV["SALCEDO_DEVELOPERS_GUIDE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
