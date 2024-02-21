@@ -1,7 +1,6 @@
 module Api
     class PostsController < ApplicationController
         skip_before_action :authorize, only: [:index, :show]
-    end    
 
     def index
         Post.all
