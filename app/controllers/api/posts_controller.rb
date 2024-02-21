@@ -39,7 +39,7 @@ module Api
     private 
 
     def post_params
-        params.permit(:title, :content, :category_ids: [])
+        params.permit(:title, :content, category_ids: [])
     end
 
     end
