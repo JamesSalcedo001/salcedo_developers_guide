@@ -1,2 +1,5 @@
-class CategoriesController < ApplicationController
+module Api
+    class CategoriesController < ApplicationController
+    end
 end
+
