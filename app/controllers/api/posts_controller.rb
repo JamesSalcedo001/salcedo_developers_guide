@@ -1,2 +1,4 @@
-class PostsController < ApplicationController
+module Api
+    class PostsController < ApplicationController
+    end    
 end
