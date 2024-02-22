@@ -1,10 +1,15 @@
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Home'
+
 
 function App() {
 
   return (
-    <div>
-        <h1>Welcome to Salcedo Developers Guide!</h1>
+    <div className='App'>
+      <Routes>        
+        <Route path="/" element={<Home/> } />
+      </Routes>
     </div>
   )
 }
