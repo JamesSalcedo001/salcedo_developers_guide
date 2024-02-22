@@ -2,9 +2,9 @@ body {
   background-color: rgb(37, 35, 57);
   color: whitesmoke;
   text-align: center;
-  /* margin: 30vh auto; */
+  margin: 30vh auto;
 }
-/* 
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -19,4 +19,4 @@ body {
 h1 {
   animation: fadeIn 2s ease-out, bounce 0.9s ease-in-out;
   animation-delay: 0s, 0.5s;
-} */
+}
