@@ -1,6 +1,6 @@
 module Api
     class UsersController < ApplicationController
-        skip_before_action :authorize, only: :create
+        skip_before_action :authorize, only: [:create]
 
         def me
             render json: @current_user, status: :ok
@@ -23,13 +23,13 @@ module Api
         def destroy
             @current_user.destroy
             session.delete :user_id
-            render json: { message: "user deleted" }, status: :ok
+            head :no_content
         end
 
         private
 
         def user_params
-            params.permit(:username, :password, :avatar)
+            params.permit(:username, :password)
         end
 
     end        
