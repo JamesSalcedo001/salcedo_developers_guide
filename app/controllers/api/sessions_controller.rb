@@ -7,7 +7,7 @@ module Api
                 session[:user_id] = user.id
                 render json: user, status: :ok
             else
-                render json: { errors: ["please enter existing username and password"]}, status: unauthorized
+                render json: { errors: ["please enter existing username and password"]}, status: :unauthorized
             end
         end
     
